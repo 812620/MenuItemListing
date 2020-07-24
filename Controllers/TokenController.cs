@@ -58,9 +58,9 @@ namespace MenuItemListing.Controllers
 
             //Validate the User Credentials    
             //Demo Purpose, I have Passed HardCoded User Information    
-            if (login.Name == "Jignesh")
+            if (login.Name == "Anjali")
             {
-                user = new Authenticate { Name = "Jignesh", Password = "Jignesh123" };
+                user = new Authenticate { Name = "Anjali", Password = "Anjali210" };
             }
             return user;
         }

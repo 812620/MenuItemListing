@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
       - name: menuitem
-        image:  practicecr.azurecr.io/menuitem:latest
+        image:  menuitem.azurecr.io/menuitem:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
-      - name: pcsn
+      - name: menuitemsn
 
 ---
 apiVersion: v1

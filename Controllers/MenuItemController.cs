@@ -15,10 +15,10 @@ namespace MenuItemListing.Controllers
     public class MenuItemController : ControllerBase
     {
         public List<MenuItem> item = new List<MenuItem> {
-        new MenuItem{ ID = 0,Name="LunchBox",freeDilivery=false,Price = 100,dateOfLaunch=(new DateTime(2020,2,12)),Active=false},
-        new MenuItem{ ID = 1,Name="Table Clothe",freeDilivery=true,Price = 100,dateOfLaunch=(new DateTime(2020,2,12)),Active=true},
-        new MenuItem{ ID = 2,Name="Pencil Box",freeDilivery=false,Price = 100,dateOfLaunch=(new DateTime(2020,2,12)),Active=true},
-        new MenuItem{ ID = 3,Name="Pen",freeDilivery=true,Price = 100,dateOfLaunch=(new DateTime(2020,2,12)),Active=false}
+        new MenuItem{ ID = 0,Name="Pizza",freeDilivery=false,Price = 100,dateOfLaunch=(new DateTime(2020,2,12)),Active=false},
+        new MenuItem{ ID = 1,Name="Burger",freeDilivery=true,Price = 100,dateOfLaunch=(new DateTime(2020,2,12)),Active=true},
+        new MenuItem{ ID = 2,Name="Chole Bhature",freeDilivery=false,Price = 100,dateOfLaunch=(new DateTime(2020,2,12)),Active=true},
+        new MenuItem{ ID = 3,Name="Hot Dog",freeDilivery=true,Price = 100,dateOfLaunch=(new DateTime(2020,2,12)),Active=false}
         };
         public List<string> itemName = new List<string>();
             
