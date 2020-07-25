@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: menuitem-deployment
+  name: menuitemlisting-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: MenuItem
+      app: MenuItemListing
   template:
     metadata:
       labels:
-        app: MenuItem
+        app: MenuItemListing
     spec:
       containers:
-      - name: menuitem
+      - name: menuitemlisting
         image:  practicecr.azurecr.io/p1repos:latest
         ports:
         - containerPort: 8080
@@ -24,10 +24,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: menuitem
+  name: menuitemlisting
 spec:
   type: LoadBalancer
   ports:
   - port: 80
   selector:
-    app: MenuItem
+    app: MenuItemListing
